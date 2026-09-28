@@ -32,16 +32,14 @@ class LlmModelManager {
         context: Context,
         modelPath: String,
         maxTokens: Int = 1024,
-        topK: Int = 40,
-        temperature: Float = 0.8f,
     ) = withContext(Dispatchers.IO) {
         close()
         val options = LlmInference.LlmInferenceOptions.builder()
             .setModelPath(modelPath)
             .setMaxTokens(maxTokens)
-            .setTopK(topK)
-            .setTemperature(temperature)
-            .setResultListener { partial, done -> onPartialResult?.invoke(partial, done) }
+            .setResultListener { partial: String, done: Boolean ->
+                onPartialResult?.invoke(partial, done)
+            }
             .build()
         llmInference = LlmInference.createFromOptions(context, options)
     }
