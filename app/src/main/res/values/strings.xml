@@ -1,3 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">دستیار مدل زبانی</string>
+    <string name="app_name">دستیار SLM</string>
+
+    <!-- عمومی -->
+    <string name="back">بازگشت</string>
+    <string name="ok">باشه</string>
+    <string name="delete">حذف</string>
+    <string name="cancel">لغو</string>
+    <string name="settings">تنظیمات</string>
+    <string name="new_chat">گفتگوی جدید</string>
+    <string name="history">تاریخچه</string>
+    <string name="send">ارسال</string>
+    <string name="stop">توقف</string>
+    <string name="copy">کپی</string>
+    <string name="type_message">پیام خود را بنویسید...</string>
+    <string name="chat_title_default">چت</string>
+    <string name="empty_chat">یک پیام بفرستید تا گفتگو شروع شود</string>
+    <string name="tokens_per_sec">%1$.1f توکن/ثانیه</string>
+
+    <!-- صفحه‌ی مدل‌ها -->
+    <string name="models_title">مدل‌های SLM</string>
+    <string name="loading_model">در حال بارگذاری مدل…</string>
+    <string name="section_catalog">مدل‌های پیشنهادی</string>
+    <string name="gated_note">نیاز به توکن Hugging Face دارد: توکن را در تنظیمات وارد کنید و شرایط استفاده‌ی مدل را در سایت Hugging Face بپذیرید.</string>
+    <string name="download">دانلود</string>
+    <string name="downloaded">دانلود شده</string>
+    <string name="section_custom">دانلود با لینک مستقیم</string>
+    <string name="url_label">آدرس دانلود (URL)</string>
+    <string name="filename_label">نام فایل (اختیاری)</string>
+    <string name="import_file">انتخاب فایل از حافظه گوشی</string>
+    <string name="importing">در حال کپی فایل: %1$d%%</string>
+    <string name="downloading">در حال دانلود %1$s</string>
+    <string name="download_progress">%1$d%% (%2$s از %3$s)</string>
+    <string name="download_progress_unknown">%1$s دانلود شد</string>
+    <string name="download_waiting">در انتظار اینترنت…</string>
+    <string name="section_saved">مدل‌های ذخیره‌شده روی گوشی</string>
+    <string name="no_models">هنوز مدلی دانلود یا اضافه نشده است.</string>
+    <string name="load">بارگذاری</string>
+    <string name="back_to_chat">بازگشت به چت (%1$s)</string>
+    <string name="delete_model_title">حذف مدل؟</string>
+    <string name="delete_model_text">فایل «%1$s» از گوشی حذف می‌شود.</string>
+
+    <string name="desc_gemma_1b">سریع و سبک؛ مناسب اغلب گوشی‌ها. قابل‌قبول برای فارسی ساده.</string>
+    <string name="desc_gemma_1b_long">همان Gemma 3 1B با ظرفیت زمینه‌ی بیشتر (تا ۴۰۹۶ توکن). «حداکثر توکن» را در تنظیمات افزایش دهید.</string>
+    <string name="desc_qwen_15b">چندزبانه و بدون نیاز به توکن. حجم و مصرف رم بیشتر؛ کیفیت فارسی را خودتان تست کنید.</string>
+
+    <!-- تاریخچه -->
+    <string name="history_title">تاریخچه‌ی گفتگوها</string>
+    <string name="no_conversations">هنوز گفتگویی ذخیره نشده است.</string>
+
+    <!-- پیام‌ها -->
+    <string name="info_context_trimmed">حافظه‌ی گفتگو پر شده بود؛ بخش‌های قدیمی‌تر برای ادامه کنار گذاشته شدند.</string>
+    <string name="err_prev_crash">بارگذاری قبلی مدل ناموفق بوده یا برنامه بسته شده است، پس بارگذاری خودکار انجام نشد. شاید مدل برای رم گوشی زیاد بزرگ است.</string>
+    <string name="err_load_failed">بارگذاری مدل ناموفق بود: %1$s</string>
+    <string name="err_load_hint_gpu">اگر پردازنده روی GPU است، در تنظیمات CPU را امتحان کنید.</string>
+    <string name="err_generate">خطا در تولید پاسخ: %1$s</string>
+    <string name="err_too_long">پیام برای حافظه‌ی مدل بیش از حد طولانی است. آن را کوتاه کنید یا «حداکثر توکن» را در تنظیمات زیاد کنید.</string>
+    <string name="err_no_space">فضای خالی گوشی کافی نیست.</string>
+    <string name="err_read_file">امکان خواندن فایل انتخاب‌شده وجود نداشت.</string>
+    <string name="err_invalid_url">آدرس معتبر نیست؛ باید با https:// شروع شود.</string>
+    <string name="err_auth">دسترسی رد شد (خطای %1$d). مدل‌های گیت‌شده مثل Gemma به توکن Hugging Face نیاز دارند: توکن را در تنظیمات وارد کنید و شرایط استفاده‌ی مدل را در سایت بپذیرید.</string>
+    <string name="err_http">سرور خطای %1$d برگرداند.</string>
+    <string name="err_network">خطای شبکه: %1$s</string>
+    <string name="err_size_mismatch">حجم فایل دانلودشده با حجم اعلام‌شده برابر نیست؛ دوباره دانلود کنید.</string>
+    <string name="err_download_generic">دانلود ناموفق بود.</string>
+
+    <!-- اعلان دانلود -->
+    <string name="notif_channel">دانلود مدل</string>
+    <string name="notif_title">دانلود مدل: %1$s</string>
+
+    <!-- تنظیمات -->
+    <string name="s_hf_token">توکن Hugging Face (برای مدل‌های گیت‌شده)</string>
+    <string name="s_hf_token_note">توکن فقط روی همین گوشی و در حافظه‌ی اختصاصی برنامه ذخیره می‌شود.</string>
+    <string name="s_system_prompt">پرامپت سیستمی (مثلاً: به فارسی و کوتاه پاسخ بده)</string>
+    <string name="s_temperature">دما (Temperature): %1$.2f</string>
+    <string name="s_top_k">Top-K: %1$d</string>
+    <string name="s_top_p">Top-P: %1$.2f</string>
+    <string name="s_max_tokens">حداکثر توکن (ورودی + خروجی)</string>
+    <string name="s_backend">پردازنده</string>
+    <string name="s_template">قالب پرامپت</string>
+    <string name="t_auto">خودکار</string>
+    <string name="t_none">بدون قالب</string>
+    <string name="s_reload_note">با بازگشت از این صفحه، تغییر «حداکثر توکن» یا «پردازنده» مدل را دوباره بارگذاری می‌کند. حداکثر توکن نباید از ظرفیت (ekv) مدل بیشتر باشد؛ مدل‌های ekv1280 حداکثر تا ۱۲۸۰.</string>
+    <string name="s_gpu_note">GPU روی بعضی گوشی‌ها ناپایدار است؛ اگر مدل بارگذاری نشد، CPU را انتخاب کنید.</string>
+    <string name="s_template_note">«خودکار» قالب را از نام فایل تشخیص می‌دهد (Gemma / Qwen). اگر پاسخ‌ها عجیب بود، قالب درست را دستی انتخاب کنید.</string>
 </resources>

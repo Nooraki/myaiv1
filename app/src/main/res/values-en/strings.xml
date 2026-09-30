@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SLM Chat</string>
+
+    <string name="back">Back</string>
+    <string name="ok">OK</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="settings">Settings</string>
+    <string name="new_chat">New chat</string>
+    <string name="history">History</string>
+    <string name="send">Send</string>
+    <string name="stop">Stop</string>
+    <string name="copy">Copy</string>
+    <string name="type_message">Type your message...</string>
+    <string name="chat_title_default">Chat</string>
+    <string name="empty_chat">Send a message to start the conversation</string>
+    <string name="tokens_per_sec">%1$.1f tokens/s</string>
+
+    <string name="models_title">SLM models</string>
+    <string name="loading_model">Loading model…</string>
+    <string name="section_catalog">Suggested models</string>
+    <string name="gated_note">Requires a Hugging Face token: enter it in Settings and accept the model license on the Hugging Face website.</string>
+    <string name="download">Download</string>
+    <string name="downloaded">Downloaded</string>
+    <string name="section_custom">Download from a direct link</string>
+    <string name="url_label">Download URL</string>
+    <string name="filename_label">File name (optional)</string>
+    <string name="import_file">Pick a file from phone storage</string>
+    <string name="importing">Copying file: %1$d%%</string>
+    <string name="downloading">Downloading %1$s</string>
+    <string name="download_progress">%1$d%% (%2$s of %3$s)</string>
+    <string name="download_progress_unknown">%1$s downloaded</string>
+    <string name="download_waiting">Waiting for network…</string>
+    <string name="section_saved">Models stored on this phone</string>
+    <string name="no_models">No model has been downloaded or added yet.</string>
+    <string name="load">Load</string>
+    <string name="back_to_chat">Back to chat (%1$s)</string>
+    <string name="delete_model_title">Delete model?</string>
+    <string name="delete_model_text">The file \"%1$s\" will be removed from this phone.</string>
+
+    <string name="desc_gemma_1b">Fast and light; fits most phones. Acceptable for simple Persian.</string>
+    <string name="desc_gemma_1b_long">Same Gemma 3 1B with a larger context (up to 4096 tokens). Raise \"Max tokens\" in Settings.</string>
+    <string name="desc_qwen_15b">Multilingual, no token needed. Larger and uses more RAM; test its Persian quality yourself.</string>
+
+    <string name="history_title">Conversation history</string>
+    <string name="no_conversations">No saved conversations yet.</string>
+
+    <string name="info_context_trimmed">The conversation memory was full; older parts were dropped to continue.</string>
+    <string name="err_prev_crash">The previous model load failed or the app was closed, so auto-load was skipped. The model may be too large for this phone\'s RAM.</string>
+    <string name="err_load_failed">Failed to load the model: %1$s</string>
+    <string name="err_load_hint_gpu">If the processor is set to GPU, try CPU in Settings.</string>
+    <string name="err_generate">Error while generating a reply: %1$s</string>
+    <string name="err_too_long">The message is too long for the model memory. Shorten it or raise \"Max tokens\" in Settings.</string>
+    <string name="err_no_space">Not enough free storage.</string>
+    <string name="err_read_file">The selected file could not be read.</string>
+    <string name="err_invalid_url">Invalid address; it must start with https://</string>
+    <string name="err_auth">Access denied (error %1$d). Gated models such as Gemma need a Hugging Face token: enter it in Settings and accept the model license on the website.</string>
+    <string name="err_http">The server returned error %1$d.</string>
+    <string name="err_network">Network error: %1$s</string>
+    <string name="err_size_mismatch">The downloaded file size does not match the announced size; please download again.</string>
+    <string name="err_download_generic">Download failed.</string>
+
+    <string name="notif_channel">Model download</string>
+    <string name="notif_title">Downloading model: %1$s</string>
+
+    <string name="s_hf_token">Hugging Face token (for gated models)</string>
+    <string name="s_hf_token_note">The token is stored only on this phone, in the app\'s private storage.</string>
+    <string name="s_system_prompt">System prompt (e.g. Answer briefly in Persian)</string>
+    <string name="s_temperature">Temperature: %1$.2f</string>
+    <string name="s_top_k">Top-K: %1$d</string>
+    <string name="s_top_p">Top-P: %1$.2f</string>
+    <string name="s_max_tokens">Max tokens (input + output)</string>
+    <string name="s_backend">Processor</string>
+    <string name="s_template">Prompt template</string>
+    <string name="t_auto">Auto</string>
+    <string name="t_none">No template</string>
+    <string name="s_reload_note">Changing \"Max tokens\" or \"Processor\" reloads the model when you leave this screen. Max tokens must not exceed the model capacity (ekv); ekv1280 models allow up to 1280.</string>
+    <string name="s_gpu_note">GPU is unstable on some phones; if the model fails to load, choose CPU.</string>
+    <string name="s_template_note">\"Auto\" detects the template from the file name (Gemma / Qwen). If replies look odd, pick the right template manually.</string>
+</resources>
